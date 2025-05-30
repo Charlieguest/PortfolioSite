@@ -292,6 +292,7 @@
 				var $this = $(this);
 
 				// Close.
+				/*
 					$('<div class="close">Close</div>')
 						.appendTo($this)
 						.on('click', function() {
@@ -302,7 +303,7 @@
 					$this.on('click', function(event) {
 						event.stopPropagation();
 					});
-
+				*/
 			});
 
 		// Events.
@@ -388,8 +389,8 @@
 		// Initialize.
 
 			// Hide main, articles.
-				$main.hide();
-				$main_articles.hide();
+				//$main.hide();
+				//$main_articles.hide();
 
 			// Initial article.
 				if (location.hash != ''
