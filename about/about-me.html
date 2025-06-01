@@ -14,9 +14,14 @@
 	</head>
 	<body class="is-preload">
 
-		<header id="header" class="nav-bar">
+		<button class="nav-bar__toggle" aria-controls="navigation" aria-expanded="false">
+			<span class="sr-only">Menu</span>
+		</button>
+
+		<header id="header" class="nav-bar" data-visible="false">
+
 			<nav class="nav-bar__Container">
-				<ul>
+				<ul id="navigation">
 					<li><a href="/PortfolioSite/about/about-me"><span aria-hidden="true">Project 1</span></a></li>
 					<li><a href="/PortfolioSite/about/about-me"><span aria-hidden="true">Project 2</span></a></li>
 					<li><a href="/PortfolioSite/about/about-me"><span aria-hidden="true">Project 3</span></a></li>
@@ -48,7 +53,7 @@
 				</article>
 
 				<!-- Intro -->
-				<article id="intro"  class="active">
+				<article id="intro" class="active">
 					<h2 class="major">Intro</h2>
 					<span class="image main"><img src="../images/pic03.jpg" alt="Video Game Screenshot" /></span>
 					<p class="card-content__text-column"> Hello my name is Charlie Guest. I'm a second year university student who is looking forward to start a career in the games industry. Although this will be first time i've worked in the industry. I've also spent time as a junior web developer through an apprentisceship. My hobbies include hiking, 5 a-side football and reading. I love designing and bringing to life creations for others to experience. Which has lead me to the games industry.</p>
@@ -69,6 +74,7 @@
 		<script src="../assets/js/breakpoints.min.js"></script>
 		<script src="../assets/js/util.js"></script>
 		<script src="../assets/js/main.js"></script>
+		<script src="../assets/js/nav.js" defer></script>
 
 	</body>
 </html>

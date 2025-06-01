@@ -14,9 +14,14 @@
 	</head>
 	<body>
 
-		<header id="header" class="nav-bar">
+		<button class="nav-bar__toggle" aria-controls="navigation" aria-expanded="false">
+			<span class="sr-only">Menu</span>
+		</button>
+
+		<header id="header" class="nav-bar" data-visible="false">
+
 			<nav class="nav-bar__Container">
-				<ul>
+				<ul id="navigation">
 					<li><a href="/PortfolioSite/about/about-me"><span aria-hidden="true">Project 1</span></a></li>
 					<li><a href="/PortfolioSite/about/about-me"><span aria-hidden="true">Project 2</span></a></li>
 					<li><a href="/PortfolioSite/about/about-me"><span aria-hidden="true">Project 3</span></a></li>
@@ -384,6 +389,7 @@ print 'It took ' + i + ' iterations to sort the deck.';</code></pre>
 		<script src="assets/js/breakpoints.min.js"></script>
 		<script src="assets/js/util.js"></script>
 		<script src="assets/js/main.js"></script>
+		<script src="assets/js/nav.js" defer></script>
 
 	</body>
 	</html>
