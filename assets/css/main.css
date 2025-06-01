@@ -1603,8 +1603,8 @@ ul.actions {
 			height: 3rem;
 			padding: 0;
 			aspect-ratio: 1;
-			top: 2rem;
-			right: 2rem;
+			top: 1.5rem;
+			right: 1.5rem;
 			z-index: 9999;
 			box-shadow: none;
 			background-repeat: no-repeat;
