@@ -663,9 +663,27 @@ input, select, textarea {
 	font-size: 1.25rem;
 }
 
-@media screen and (min-width: 736px) {
+.card-content__button {
+	text-decoration: none;
+	border: 1px solid;
+	border-color: #FFFFFF;
+	border-radius: 10px;
+	
+	line-height: 2.75rem;
+	padding: 0.5rem 1.5rem 0.5rem 1.5rem;
+	text-transform: uppercase;
+	letter-spacing: 0.2rem;
+	font-size: 1rem;
+	font-weight: 800;
+}
 
-	.card-content__container {
+	.card-content__button:hover {
+		border-bottom-color: #FFFFFF;
+		background-color: rgba(255, 255, 255, 0.075);
+	}
+
+	@media screen and (min-width: 736px) {
+		.card-content__container {
 		display: flex;
 		flex-direction: row;
 	}
@@ -1879,7 +1897,7 @@ repeat;
 	@media screen and (max-width: 736px) {
 
 		article {
-			padding: 3.5rem 2rem 0.5rem 2rem;
+			padding: 3.5rem 2rem 1.5rem 2rem;
 		}
 
 			article .close:before {
@@ -1898,7 +1916,7 @@ repeat;
 	@media screen and (max-width: 480px) {
 
 		article {
-			padding: 3rem 1.5rem 0.5rem 1.5rem;
+			padding: 3rem 1.5rem 1.5rem 1.5rem;
 		}
 	}
 
@@ -1938,12 +1956,24 @@ repeat;
 		opacity: 0;
 	}
 
-.footer-icons__container .footer-icon {
-	background-size: cover !important;
-	background-repeat: no-repeat !important;
-	box-shadow: none;
-	margin: 0 0.5rem;
+
+.footer-icons__container {
+	display: flex;
+	justify-content: center;
+	margin-bottom: 0.5rem;
 }
+
+	.footer-icons__container .footer-icon {
+		background-size: cover !important;
+		background-repeat: no-repeat !important;
+		box-shadow: none;
+		margin: 0 0.5rem;
+		display: block;
+		width: 2.5rem;
+		height: 2.5rem;
+		text-decoration: none;
+		border-bottom: none;
+	}
 
 .footer-icon.instagram {
 	background: url(../../images/icons8-instagram.svg);
