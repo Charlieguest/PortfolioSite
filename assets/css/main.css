@@ -660,6 +660,7 @@ input, select, textarea {
 
 .card-content__text-column {
 	margin: 2rem 0;
+	font-size: 1.25rem;
 }
 
 @media screen and (min-width: 736px) {
@@ -670,17 +671,18 @@ input, select, textarea {
 	}
 
 	.card-content__image {
-		margin-right: 1rem !important;
+		margin-right: 2rem !important;
 	}
 
-
+	.card-content__text {
+		font-size: 1.5rem;
+	}
 }
 
 /* Image */
 .image {
 	border-radius: 4px;
 	border: 0;
-	/*display: inline-block;*/
 	position: relative;
 }
 
@@ -734,10 +736,11 @@ input, select, textarea {
 				width: auto;
 			}
 
-		.image.main {
-			width: auto;
-			margin: 0;
-		}
+	.image.main {
+		width: auto;
+		height: 300px;
+		margin: 0;
+	}
 
 		.image.main img {
 			width: 100%;
@@ -750,6 +753,7 @@ input, select, textarea {
 
 			.image.main {
 				margin: 2rem 0;
+				height: 250px;
 				width: 100%;
 			}
 
@@ -759,6 +763,7 @@ input, select, textarea {
 		@media screen and (max-width: 480px) {
 
 			.image.main {
+				height: 200px;
 				margin: 1.5rem 0;
 			}
 
@@ -1309,6 +1314,10 @@ ul.actions {
 			margin: 0 2rem 0 0;
 			width: auto;
 		}
+
+		.carousel {
+			margin: 4rem 0;
+		}
 	}
 
 	/* BG */
@@ -1800,7 +1809,7 @@ repeat;
 		z-index: 3;
 	}
 
-		#main article {
+		article {
 			-moz-transform: translateY(0.25rem);
 			-webkit-transform: translateY(0.25rem);
 			-ms-transform: translateY(0.25rem);
@@ -1818,12 +1827,13 @@ repeat;
 			opacity: 0;
 		}
 
-			#main article.active {
+			article.active {
 				-moz-transform: translateY(0);
 				-webkit-transform: translateY(0);
 				-ms-transform: translateY(0);
 				transform: translateY(0);
 				opacity: 1;
+				margin-top: 4rem;
 			}
 
 			#main article .close {
@@ -1868,22 +1878,26 @@ repeat;
 
 	@media screen and (max-width: 736px) {
 
-		#main article {
+		article {
 			padding: 3.5rem 2rem 0.5rem 2rem;
 		}
 
-			#main article .close:before {
+			article .close:before {
 				top: 0.875rem;
 				left: 0.875rem;
 				width: 2.25rem;
 				height: 2.25rem;
 				background-size: 14px 14px;
 			}
+
+			article.active {
+				margin-top: 2rem;
+			}
 	}
 
 	@media screen and (max-width: 480px) {
 
-		#main article {
+		article {
 			padding: 3rem 1.5rem 0.5rem 1.5rem;
 		}
 	}
