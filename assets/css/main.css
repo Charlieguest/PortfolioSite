@@ -191,10 +191,9 @@ input, select, textarea {
 
 		h1.major, h2.major, h3.major, h4.major, h5.major, h6.major {
 			border-bottom: solid 1px #ffffff;
-			width: -moz-max-content;
-			width: -webkit-max-content;
-			width: -ms-max-content;
-			width: max-content;
+			width: -moz-fit-content;
+			width: -webkit-fit-content;
+			width: fit-content;
 			padding-bottom: 0.5rem;
 			margin: 0 0 2rem 0;
 		}
@@ -1265,16 +1264,19 @@ ul.actions {
 			border-color: #FFFFFF;
 		}
 
+		.carousel-list .carousel-list__item .carousel-list__item--link.puzzle-world {
+			background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),url(../../images/PuzzleWorldGenerator.png);
+		}
 
-	.carousel-list .carousel-list__item .list-item__badge {
-		
-		padding: 0.5rem 1rem;
-		margin: 16px 0 18px;
-		border-radius: 2.5rem;
-		width: fit-content;
-		font-weight: 600;
-		font-size: 0.95rem;
-	}
+
+.carousel-list .carousel-list__item .list-item__badge {
+	padding: 0.5rem 1rem;
+	margin: 16px 0 18px;
+	border-radius: 2.5rem;
+	width: fit-content;
+	font-weight: 600;
+	font-size: 0.95rem;
+}
 
 		.carousel-list .carousel-list__item .list-item__badge.prototype {
 			color: #5372F0;
