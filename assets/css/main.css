@@ -761,7 +761,7 @@ input, select, textarea {
 
 		.image.main img {
 			width: 100%;
-			height: auto;
+			max-height: 30rem;
 			display: block;
 			object-fit: cover; /* optional */
 }
