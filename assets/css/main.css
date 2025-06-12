@@ -1253,19 +1253,26 @@ ul.actions {
 		text-decoration: none;
 		background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),url(../../images/pic03.jpg);
 		background-repeat: no-repeat;
-		background-size: cover;
 		padding: 1.2rem;
+		background-size: cover;
 		border-radius: 1rem;
-		border: 1px solid transparent;
+/*		border: 1px solid transparent;*/
 		box-shadow: 0 10px 10px rgba(0, 0, 0, 0.07);
 	}
 
 		.carousel-list .carousel-list__item .carousel-list__item--link:hover {
+			border: 1px solid;
 			border-color: #FFFFFF;
 		}
 
 		.carousel-list .carousel-list__item .carousel-list__item--link.puzzle-world {
-			background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),url(../../images/PuzzleWorldGenerator.png);
+			background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),url(../../images/PuzzleWorldGenerator2.png);
+			background-size: cover;
+		}
+
+		.carousel-list .carousel-list__item .carousel-list__item--link.multiplayer {
+			background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),url(../../images/MultiplayerGameplay.png);
+			background-size: cover;
 		}
 
 

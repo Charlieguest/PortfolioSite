@@ -38,30 +38,54 @@
         <!-- Main -->
         <div id="main" class="active">
 
+            <article id="about" class="active">
+                <h1 class="major">Online Multiplayer Prototype</h1>
+                <div class="card-content__container">
+                    <div class="image main card-content__image">
+                        <img src="../images/MultiplayerGameplay2.png" alt="Field with Houses" />
+                    </div>
+                    <p class="card-content__text">
+                        This project is what I decided to create for my dissertation piece. My main aim was to combine a procedural terrain with a generative
+                        puzzle mechanic algorithm to create a world which is ever changing each playthrough.
+                    </p>
+                </div>
+            </article>
+
             <article id="intro" class="active">
-
-                <h2 class="major">About Me</h2>
-                <span class="image main"><img src="../images/pic03.jpg" alt="Video Game Screenshot" /></span>
+                <h2 class="major">Demo Video</h2>
                 <p class="card-content__text-column">
-                    Hello my name is Charlie Guest. I'm a new graduate at Staffordshire University who is looking to start a career in the games industry.
-                    I am based in the North East of England.
+                    Below is a video of the tool generating a few different results:
                 </p>
+                <div class="image main video__Container">
+                    <iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/BrIUzyqTpHw?si=iYk1ecRstdmMFpoDw&autoplay=1&mute=1" title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                </div>
+            </article>
 
+            <article id="intro" class="active">
+                <h2 class="major">Planning & Development</h2>
                 <p class="card-content__text-column">
-                    I love designing and bringing to life creations for others to experience. Which has lead me to the games industry.
-                    I am passionate about communicating in a team to create games that are unique and interesting. My specialities in programming are AI and
-                    Procedural generation. I have experience in both Unreal Engine and Unity.
+                    I decided to use Unreal Engine for this project. This was due to it's inclusion of the procedural mesh component and the range of plugins and
+                    modules it has at its disposal. I used C++ to develop the majority of the functionality alongisde blueprint for the UI components such as the
+                    inventory.
                 </p>
-
+                <span class="image main"><img alt="Field with Houses" src="../images/PuzzleWorldGenerator2.png" alt="Video Game Screenshot" /></span>
                 <p class="card-content__text-column">
-                    Although am looking for my first role in the games industry. I have previously completed a 2 Year apprenticeship in web development.
-                    This role required iterative development following the agile methodology, programming using JavaScript, HTML and CSS.
+                    For the terrain itself. I decided to use two different techniques for the triangulation. To make the terrain faces look organic while not have too many
+                    verticies, I decided to implement a Delaunay Triangulation algorithm to get a flat plane made up of randomized faces. The only thing being randomized
+                    were the vericies inputted into the algorithm. To then give the terrain believable height. I then added a 2D Perlin Noise calculation which took in the current
+                    2D Vector of each generated position and provided a height result that was cohesive to other 2D vector positions close by.
                 </p>
-
+                <span class="image main"><img alt="Field Wireframe" src="../images/PuzzleWorldGeneratorWireframe.png" alt="Video Game Screenshot" /></span>
                 <p class="card-content__text-column">
-                    In my spare time i like to go hiking and am part of a 5 a-side football team in Middlesbrough.
+                    For the puzzle generation, I did some research into different generation algorithms. I wanted a narritive puzzle system where the player could
+                    combine different items to generate an output item that would help them progress. I found that the Wave Function Collapse can replicate the functionality
+                    of this quite well. I modified and repurposed an existing WFC plugin that comes with Unreal Engine so that it takes in a list of items, Calculates an
+                    output item and then works backwards to generate a list of solvable items that can in some way be combined to produce the output item.
                 </p>
-
+                <p class="card-content__text-column">
+                    To store the data for the output and input items. I used a data asset:
+                </p>
+                <span class="image main"><img alt="Unreal Engine Data Asset" src="../images/PuzzleWorldGeneratorDataAsset.png" alt="Video Game Screenshot" /></span>
             </article>
 
             <footer id="footer">
