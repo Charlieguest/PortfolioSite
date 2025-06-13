@@ -676,10 +676,19 @@ input, select, textarea {
 	font-weight: 800;
 }
 
-	.card-content__button:hover {
-		border-bottom-color: #FFFFFF;
-		background-color: rgba(255, 255, 255, 0.075);
+.card-content__flex {
+	display: flex;
+	justify-content: center;
+}
+
+	.card-content__flex .card-content__flex-img {
+		max-height: 200vh;
 	}
+
+.card-content__button:hover {
+	border-bottom-color: #FFFFFF;
+	background-color: rgba(255, 255, 255, 0.075);
+}
 
 	@media screen and (min-width: 736px) {
 		.card-content__container {
