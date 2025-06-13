@@ -1288,6 +1288,11 @@ input, select, textarea {
 				background-size: cover;
 			}
 
+			.carousel-list .carousel-list__item .carousel-list__item--link.tool {
+				background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),url(../../images/ForestToolBase.png);
+				background-size: cover;
+			}
+
 		.carousel-list .carousel-list__item .list-item__badge {
 			padding: 0.5rem 1rem;
 			margin: 16px 0 18px;
