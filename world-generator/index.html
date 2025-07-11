@@ -43,7 +43,7 @@
                 <h1 class="major">Puzzle World Generator</h1>
                 <div class="card-content__container">
                     <div class="image main card-content__image">
-                        <img src="../images/PuzzleWorldGenerator.png" alt="Field with Houses" />
+                        <img loading="lazy" src="../images/PuzzleWorldGenerator.png" alt="Field with Houses" />
                     </div>
                     <p class="card-content__text">
                         I created this project for my dissertation piece. My main aim was to combine a procedural terrain with a generative
@@ -58,7 +58,7 @@
                     Below is a video of the level generating a few different results:
                 </p>
                 <div class="image main video__Container">
-                    <iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/Tx0746Ij7Tw?si=mthC9CtjW-7bIZkw&autoplay=1&mute=1" title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                    <iframe loading="lazy" width="560" height="315" src="https://www.youtube-nocookie.com/embed/Tx0746Ij7Tw?si=mthC9CtjW-7bIZkw&autoplay=1&mute=1" title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
                 </div>
             </article>
             
@@ -69,14 +69,14 @@
                     modules it has at its disposal. I used C++ to develop the majority of the functionality alongisde blueprint for the UI components such as the
                     inventory.
                 </p>
-                <span class="image main"><img alt="Field with Houses" src="../images/PuzzleWorldGenerator2.png" /></span>
+                <span class="image main"><img loading="lazy" alt="Field with Houses" src="../images/PuzzleWorldGenerator2.png" /></span>
                 <p class="card-content__text-column">
                     For the terrain itself. I decided to use two different techniques for the triangulation. To make the terrain faces look organic while not have too many
                     verticies, I decided to implement a Delaunay Triangulation algorithm to get a flat plane made up of randomized faces. The only thing being randomized
                     were the vericies inputted into the algorithm. To then give the terrain believable height. I then added a 2D Perlin Noise calculation which took in the current
                     2D Vector of each generated position and provided a height result that was cohesive to other 2D vector positions close by.
                 </p>
-                <span class="image main"><img alt="Field Wireframe" src="../images/PuzzleWorldGeneratorWireframe.png" /></span>
+                <span class="image main"><img loading="lazy" alt="Field Wireframe" src="../images/PuzzleWorldGeneratorWireframe.png" /></span>
                 <p class="card-content__text-column">
                     For the puzzle generation, I did some research into different generation algorithms. I wanted a narritive puzzle system where the player could
                     combine different items to generate an output item that would help them progress. I found that the Wave Function Collapse can replicate the functionality
@@ -86,7 +86,7 @@
                 <p class="card-content__text-column">
                     To store the data for the output and input items. I used a data asset:
                 </p>
-                <span class="image main"><img alt="Unreal Engine Data Asset" src="../images/PuzzleWorldGeneratorDataAsset.png" /></span>
+                <span class="image main"><img loading="lazy" alt="Unreal Engine Data Asset" src="../images/PuzzleWorldGeneratorDataAsset.png" /></span>
             </article>
 
 

@@ -42,7 +42,7 @@
                 <h1 class="major">Online Multiplayer Prototype</h1>
                 <div class="card-content__container">
                     <div class="image main card-content__image">
-                        <img src="../images/MultiplayerGameplay2.png" alt="Field with Houses" />
+                        <img loading="lazy" src="../images/MultiplayerGameplay2.png" alt="Multiplayer prototype gameplaye" />
                     </div>
                     <p class="card-content__text">
                         This project demonstrates use of online multiplayer interactivity using Unity's Online Multiplayer features. These consist of Multiplayer
@@ -59,7 +59,7 @@
                     multiple game instances on one PC.
                 </p>
                 <div class="image main video__Container">
-                    <iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/BrIUzyqTpHw?si=iYk1ecRstdmMFpoDw&autoplay=1&mute=1" title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                    <iframe loading="lazy" width="560" height="315" src="https://www.youtube-nocookie.com/embed/BrIUzyqTpHw?si=iYk1ecRstdmMFpoDw&autoplay=1&mute=1" title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
                 </div>
             </article>
 
@@ -70,13 +70,13 @@
                     to define whether the player had selected man, spider or niether. I programmed the logic to make sure both clients had connected and both spider and man
                     roles had been selected before the level could begin.
                 </p>
-                <span class="image main"><img src="../images/MultiplayerSelection2.png" alt="Game Selection Screen" /></span>
+                <span class="image main"><img loading="lazy" src="../images/MultiplayerSelection2.png" alt="Game Selection Screen" /></span>
                 <p class="card-content__text-column">
                     To handle player movement that's replicated over both clients, I made both players into Network Gameobjects. This means their components such as rigidbody
                     values are replicated over each client. For specific actions that needed to be replicated, I used Remote Proccedure Calls (RPCS) to propogate an action to client,
                     server or everyone. An example of one of these actions would be the man character throwing the projectiles at the spider.
                 </p>
-                <span class="image main"><img src="../images/MultiplayerGameplay.png" alt="Multiplayer Gameplayer" /></span>
+                <span class="image main"><img loading="lazy" src="../images/MultiplayerGameplay.png" alt="Multiplayer Gameplayer" /></span>
                 <p class="card-content__text-column">
                     Once either player has ran out of health. The Connection is severed and both clients are sent back to the selection screen. I have a client updater script
                     that is loaded initially once the project is ran. Each time the players re-load the game, an integer in the client updater script is increased. This is because
